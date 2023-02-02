@@ -6,8 +6,27 @@ var skillsCtrl = require('../controllers/skills');
 // GET / skills
 router.get('/', skillsCtrl.index);
 
+// GET /skills/new 
+router.get('/new', skillsCtrl.new);
+
 // GET /:ID  
 router.get('/:id', skillsCtrl.show);
+
+// GET /skills/:id/edit
+router.get('/:id/edit', skillsCtrl.edit);
+
+// POST /skills
+router.post('/', skillsCtrl.create);
+
+// DELETE /skills/:id
+router.delete('/:id', skillsCtrl.delete);
+
+// PUT /skills/:id
+router.put('/:id', skillsCtrl.update);
+
+
+
+router.post('/', skillsCtrl.create);
 
 
 module.exports = router;
