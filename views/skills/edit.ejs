@@ -1,11 +1,12 @@
 <%- include('../partials/header') %>
-
-<form action="/skills/<%= skill.id %>?_method=PUT" method="POST">
+<br>
+<br>
+<form action="/skills/<%= skill.id %>?_method=PUT" method="POST"><br><br>
   <input type="text" name="skill" value="<%= skill.skill %>"><br>
-  <label>
+  <label><br>
     <input type="checkbox" name="mastered" <%= skill.mastered ? 'checked' : '' %>>
     Mastered
-  </label><br>
+  </label><br><br>
   <button type="submit">Update Skill</button>
 </form>
 
