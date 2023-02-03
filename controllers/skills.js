@@ -31,7 +31,7 @@ module.exports = {
   }
 
   function create(req, res) {
-    console.log(req.body);
+   
     // Models are responible for CRUD'ing the data
     Skill.create(req.body);
     // Always do a redirect when data has been changed
